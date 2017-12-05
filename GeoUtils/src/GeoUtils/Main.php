@@ -74,7 +74,7 @@ class Main extends PluginBase implements Listener{
 			$killer = $cause->getDamager();
 			if($killer instanceof Player){
 				$event->setDeathMessage("");
-				$player->sendMessage("§bSei stato killato da " . $killer->getName());
+				$player->sendMessage("§cSei stato killato da " . $killer->getName());
 				$killer->sendMessage("§bHai killato " . $player->getName());
 				$player->setMaxHealth(20);
 				$player->getInventory()->clearAll();
